@@ -6,7 +6,12 @@ const {
   localeChallengesRootDir
 } = require('./utils/buildChallenges');
 
-const { NODE_ENV: env, LOCALE: locale = 'english' } = process.env;
+// xingdebug
+console.log(' localeChallengesRootDir localeChallengesRootDir ' + localeChallengesRootDir);
+
+// xing added, because here process.env does not contain LOCALE,
+// why
+const { NODE_ENV: env, LOCALE: locale = 'chinese' } = process.env;
 
 const selectedGuideDir = `../${
   env === 'production' ? 'guide' : 'mock-guide'
@@ -156,3 +161,4 @@ module.exports = {
     'gatsby-plugin-sitemap'
   ]
 };
+
