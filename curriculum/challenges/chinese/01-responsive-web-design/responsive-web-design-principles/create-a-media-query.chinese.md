@@ -18,9 +18,9 @@ localeTitle: 创建媒体查询
 ```yml
 tests:
   - text: 当设备<code>height</code>小于或等于800px时，您的<code>p</code>元素的<code>font-size</code>为10px。
-    testString: 'assert($("p").css("font-size") == "10px", "Your <code>p</code> element should have the <code>font-size</code> of 10px when the device <code>height</code> is less than or equal to 800px.");'
+    testString: assert($('p').css('font-size') == '10px', 'Your <code>p</code> element should have the <code>font-size</code> of 10px when the device <code>height</code> is less than or equal to 800px.');
   - text: 为<code>height</code>小于或等于800px的设备声明<code>@media</code>查询。
-    testString: 'assert(code.match(/@media\s*?\(\s*?max-height\s*?:\s*?800px\s*?\)/g), "Declare a <code>@media</code> query for devices with a <code>height</code> less than or equal to 800px.");'
+    testString: assert(code.match(/@media\s*?\(\s*?max-height\s*?:\s*?800px\s*?\)/g), 'Declare a <code>@media</code> query for devices with a <code>height</code> less than or equal to 800px.');
 
 ```
 

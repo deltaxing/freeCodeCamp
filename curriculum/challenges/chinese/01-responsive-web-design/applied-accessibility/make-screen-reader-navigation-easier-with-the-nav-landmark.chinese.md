@@ -18,13 +18,13 @@ localeTitle: 使用导航Landmark使屏幕阅读器导航更轻松
 ```yml
 tests:
   - text: 您的代码应该有一个<code>nav</code>标记。
-    testString: 'assert($("nav").length == 1, "Your code should have one <code>nav</code> tag.");'
+    testString: assert($('nav').length == 1, 'Your code should have one <code>nav</code> tag.');
   - text: 你的<code>nav</code>标签应该包裹<code>ul</code>及其列表项。
-    testString: 'assert($("nav").children("ul").length == 1, "Your <code>nav</code> tags should wrap around the <code>ul</code> and its list items.");'
+    testString: assert($('nav').children('ul').length == 1, 'Your <code>nav</code> tags should wrap around the <code>ul</code> and its list items.');
   - text: 您的代码不应包含任何<code>div</code>标记。
-    testString: 'assert($("div").length == 0, "Your code should not have any <code>div</code> tags.");'
+    testString: assert($('div').length == 0, 'Your code should not have any <code>div</code> tags.');
   - text: 确保您的<code>nav</code>元素具有结束标记。
-    testString: 'assert(code.match(/<\/nav>/g) && code.match(/<\/nav>/g).length === code.match(/<nav>/g).length, "Make sure your <code>nav</code> element has a closing tag.");'
+    testString: assert(code.match(/<\/nav>/g) && code.match(/<\/nav>/g).length === code.match(/<nav>/g).length, 'Make sure your <code>nav</code> element has a closing tag.');
 
 ```
 

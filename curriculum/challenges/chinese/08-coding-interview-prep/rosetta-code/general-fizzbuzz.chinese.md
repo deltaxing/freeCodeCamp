@@ -19,23 +19,23 @@ localeTitle: 一般的FizzBu​​zz
 ```yml
 tests:
   - text: <code>genFizzBuzz</code>应该是一个功能。
-    testString: 'assert(typeof genFizzBuzz=="function","<code>genFizzBuzz</code> should be a function.");'
+    testString: assert(typeof genFizzBuzz=='function','<code>genFizzBuzz</code> should be a function.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[0][0])+&quot;,&quot;+tests[0][1]+&quot;)</code>应该返回一个类型。'
-    testString: 'assert(typeof genFizzBuzz(tests[0][0],tests[0][1])=="string","<code>genFizzBuzz("+JSON.stringify(tests[0][0])+","+tests[0][1]+")</code> should return a type.");'
+    testString: assert(typeof genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 6)=='string','<code>genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 6)</code> should return a string.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[0][0])+&quot;,&quot;+tests[0][1]+&quot;)</code>应返回<code>&quot;&quot;+results[0]+&quot;&quot;</code> 。'
-    testString: 'assert.equal(genFizzBuzz(tests[0][0],tests[0][1]),results[0],"<code>genFizzBuzz("+JSON.stringify(tests[0][0])+","+tests[0][1]+")</code> should return <code>""+results[0]+""</code>.");'
+    testString: assert.equal(genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 6), "Fizz",'<code>genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 6)</code> should return <code>"Fizz"</code>.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[1][0])+&quot;,&quot;+tests[1][1]+&quot;)</code>应返回<code>&quot;&quot;+results[1]+&quot;&quot;</code> 。'
-    testString: 'assert.equal(genFizzBuzz(tests[1][0],tests[1][1]),results[1],"<code>genFizzBuzz("+JSON.stringify(tests[1][0])+","+tests[1][1]+")</code> should return <code>""+results[1]+""</code>.");'
+    testString: assert.equal(genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 10), "Buzz",'<code>genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 10)</code> should return <code>"Buzz"</code>.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[2][0])+&quot;,&quot;+tests[2][1]+&quot;)</code>应返回<code>&quot;&quot;+results[2]+&quot;&quot;</code> 。'
-    testString: 'assert.equal(genFizzBuzz(tests[2][0],tests[2][1]),results[2],"<code>genFizzBuzz("+JSON.stringify(tests[2][0])+","+tests[2][1]+")</code> should return <code>""+results[2]+""</code>.");'
+    testString: assert.equal(genFizzBuzz([[3, "Buzz"],[5, "Fizz"]], 12), "Buzz",'<code>genFizzBuzz([[3, "Buzz"],[5, "Fizz"]], 12)</code> should return <code>"Buzz"</code>.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[3][0])+&quot;,&quot;+tests[3][1]+&quot;)</code>应返回<code>&quot;&quot;+results[3]+&quot;&quot;</code> 。'
-    testString: 'assert.equal(genFizzBuzz(tests[3][0],tests[3][1]),results[3],"<code>genFizzBuzz("+JSON.stringify(tests[3][0])+","+tests[3][1]+")</code> should return <code>""+results[3]+""</code>.");'
+    testString: assert.equal(genFizzBuzz([[3, "Buzz"],[5, "Fizz"]], 13), '13','<code>genFizzBuzz([[3, "Buzz"],[5, "Fizz"]], 13)</code> should return <code>"13"</code>.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[4][0])+&quot;,&quot;+tests[4][1]+&quot;)</code>应该返回<code>&quot;&quot;+results[4]+&quot;&quot;</code> 。'
-    testString: 'assert.equal(genFizzBuzz(tests[4][0],tests[4][1]),results[4],"<code>genFizzBuzz("+JSON.stringify(tests[4][0])+","+tests[4][1]+")</code> should return <code>""+results[4]+""</code>.");'
+    testString: assert.equal(genFizzBuzz([[3, "Buzz"],[5, "Fizz"]], 15), 'BuzzFizz','<code>genFizzBuzz([[3, "Buzz"],[5, "Fizz"]], 15)</code> should return <code>"BuzzFizz"</code>.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[5][0])+&quot;,&quot;+tests[5][1]+&quot;)</code>应返回<code>&quot;&quot;+results[5]+&quot;&quot;</code> 。'
-    testString: 'assert.equal(genFizzBuzz(tests[5][0],tests[5][1]),results[5],"<code>genFizzBuzz("+JSON.stringify(tests[5][0])+","+tests[5][1]+")</code> should return <code>""+results[5]+""</code>.");'
+    testString: assert.equal(genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 15), 'FizzBuzz','<code>genFizzBuzz([[3, "Fizz"],[5, "Buzz"]], 15)</code> should return <code>"FizzBuzz"</code>.');
   - text: '<code>genFizzBuzz(&quot;+JSON.stringify(tests[6][0])+&quot;,&quot;+tests[6][1]+&quot;)</code>应该返回<code>&quot;&quot;+results[6]+&quot;&quot;</code> 。'
-    testString: 'assert.equal(genFizzBuzz(tests[6][0],tests[6][1]),results[6],"<code>genFizzBuzz("+JSON.stringify(tests[6][0])+","+tests[6][1]+")</code> should return <code>""+results[6]+""</code>.");'
+    testString: assert.equal(genFizzBuzz([[3, "Fizz"],[5, "Buzz"],[7, "Baxx"]], 105), 'FizzBuzzBaxx','<code>genFizzBuzz([[3, "Fizz"],[5, "Buzz"],[7, "Baxx"]], 105)</code> should return <code>"FizzBuzzBaxx"</code>.');
 
 ```
 

@@ -18,7 +18,7 @@ localeTitle: 使用占位符文本填充空白
 ```yml
 tests:
   - text: 你的<code>p</code>元素应该包含所提供的<code>kitty ipsum text</code>的前几个单词。
-    testString: 'assert.isTrue((/Kitty(\s)+ipsum/gi).test($("p").text()), "Your <code>p</code> element should contain the first few words of the provided <code>kitty ipsum text</code>.");'
+    testString: assert.isTrue((/Kitty(\s)+ipsum/gi).test($("p").text()), 'Your <code>p</code> element should contain the first few words of the provided <code>kitty ipsum text</code>.');
 
 ```
 

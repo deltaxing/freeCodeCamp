@@ -18,7 +18,7 @@ localeTitle: 设置段落文本的字体大小
 ```yml
 tests:
   - text: 您的<code>p</code>标签的<code>font-size</code>为16像素。
-    testString: 'assert($("p").css("font-size") == "16px", "Your <code>p</code> tag should have a <code>font-size</code> of 16 pixels.");'
+    testString: assert($('p').css('font-size') == '16px', 'Your <code>p</code> tag should have a <code>font-size</code> of 16 pixels.');
 
 ```
 

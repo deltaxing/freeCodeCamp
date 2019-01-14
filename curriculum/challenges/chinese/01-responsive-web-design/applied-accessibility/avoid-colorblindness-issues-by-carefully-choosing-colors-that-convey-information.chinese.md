@@ -18,7 +18,7 @@ undefined
 ```yml
 tests:
   - text: 您的代码应将<code>button</code>的文本<code>color</code>更改为深蓝色。
-    testString: 'assert($("button").css("color") == "rgb(0, 51, 102)", "Your code should change the text <code>color</code> for the <code>button</code> to the dark blue.");'
+    testString: assert($('button').css('color') == 'rgb(0, 51, 102)', 'Your code should change the text <code>color</code> for the <code>button</code> to the dark blue.');
 
 ```
 

@@ -18,7 +18,7 @@ localeTitle: 使用网格区域而不创建区域模板
 ```yml
 tests:
   - text: <code>item5</code>类应该具有值为<code>3/1/4/4</code>的<code>grid-area</code>属性。
-    testString: 'assert(code.match(/.item5\s*?{[\s\S]*grid-area\s*?:\s*?3\s*?\/\s*?1\s*?\/\s*?4\s*?\/\s*?4\s*?;[\s\S]*}/gi), "<code>item5</code> class should have a <code>grid-area</code> property that has the value of <code>3/1/4/4</code>.");'
+    testString: assert(code.match(/.item5\s*?{[\s\S]*grid-area\s*?:\s*?3\s*?\/\s*?1\s*?\/\s*?4\s*?\/\s*?4\s*?;[\s\S]*}/gi), '<code>item5</code> class should have a <code>grid-area</code> property that has the value of <code>3/1/4/4</code>.');
 
 ```
 

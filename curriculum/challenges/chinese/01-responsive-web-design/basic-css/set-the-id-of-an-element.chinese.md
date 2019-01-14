@@ -18,7 +18,7 @@ localeTitle: 设置元素的id
 ```yml
 tests:
   - text: 为<code>form</code>元素添加<code>cat-photo-form</code>的id。
-    testString: 'assert($("form").attr("id") === "cat-photo-form", "Give your <code>form</code> element the id of <code>cat-photo-form</code>.");'
+    testString: assert($("form").attr("id") === "cat-photo-form", 'Give your <code>form</code> element the id of <code>cat-photo-form</code>.');
 
 ```
 

@@ -18,7 +18,7 @@ localeTitle: 使用CSS变换属性skewY沿Y轴倾斜元素
 ```yml
 tests:
   - text: id <code>top</code>的元素应沿其Y轴倾斜-10度。
-    testString: 'assert(code.match(/#top\s*?{\s*?.*?\s*?transform:\s*?skewY\(-10deg\);/g), "The element with id <code>top</code> should be skewed by -10 degrees along its Y-axis.");'
+    testString: assert(code.match(/#top\s*?{\s*?.*?\s*?transform:\s*?skewY\(-10deg\);/g), 'The element with id <code>top</code> should be skewed by -10 degrees along its Y-axis.');
 
 ```
 

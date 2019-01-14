@@ -18,7 +18,7 @@ localeTitle: 使用align-items属性对齐元素
 ```yml
 tests:
   - text: '<code>#box-container</code>元素的<code>align-items</code>属性应设置为center的值。'
-    testString: 'assert($("#box-container").css("align-items") == "center", "The <code>#box-container</code> element should have an <code>align-items</code> property set to a value of center.");'
+    testString: assert($('#box-container').css('align-items') == 'center', 'The <code>#box-container</code> element should have an <code>align-items</code> property set to a value of center.');
 
 ```
 

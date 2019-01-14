@@ -18,9 +18,9 @@ localeTitle: 使用标题显示内容的层次关系
 ```yml
 tests:
   - text: 您的代码应该有六个<code>h3</code>标签。
-    testString: 'assert($("h3").length === 6, "Your code should have six <code>h3</code> tags.");'
+    testString: assert($("h3").length === 6, 'Your code should have 6 <code>h3</code> tags.');
   - text: 您的代码不应包含任何<code>h5</code>标记。
-    testString: 'assert($("h5").length === 0, "Your code should not have any <code>h5</code> tags.");'
+    testString: assert((code.match(/\/h3/g) || []).length===6,'Your code should have 6 <code>h3</code> closing tags.');
 
 ```
 

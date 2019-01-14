@@ -18,9 +18,9 @@ localeTitle: 使用无限动画计数制作CSS心跳
 ```yml
 tests:
   - text: <code>heart</code>类的<code>animation-iteration-count</code>属性应具有无限值。
-    testString: 'assert($(".heart").css("animation-iteration-count") == "infinite", "The <code>animation-iteration-count</code> property for the <code>heart</code> class should have a value of infinite.");'
+    testString: assert($('.heart').css('animation-iteration-count') == 'infinite', 'The <code>animation-iteration-count</code> property for the <code>heart</code> class should have a value of infinite.');
   - text: <code>back</code>类的<code>animation-iteration-count</code>属性应具有无限值。
-    testString: 'assert($(".back").css("animation-iteration-count") == "infinite", "The <code>animation-iteration-count</code> property for the <code>back</code> class should have a value of infinite.");'
+    testString: assert($('.back').css('animation-iteration-count') == 'infinite', 'The <code>animation-iteration-count</code> property for the <code>back</code> class should have a value of infinite.');
 
 ```
 

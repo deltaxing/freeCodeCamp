@@ -18,9 +18,9 @@ localeTitle: 了解互补色
 ```yml
 tests:
   - text: 具有<code>blue</code>类的<code>div</code>元素应具有<code>blue</code>的<code>background-color</code> 。
-    testString: 'assert($(".blue").css("background-color") == "rgb(0, 0, 255)", "The <code>div</code> element with class <code>blue</code> should have a <code>background-color</code> of blue.");'
+    testString: assert($('.blue').css('background-color') == 'rgb(0, 0, 255)', 'The <code>div</code> element with class <code>blue</code> should have a <code>background-color</code> of blue.');
   - text: 类<code>yellow</code>的<code>div</code>元素应该具有<code>yellow</code>的<code>background-color</code> 。
-    testString: 'assert($(".yellow").css("background-color") == "rgb(255, 255, 0)", "The <code>div</code> element with class <code>yellow</code> should have a <code>background-color</code> of yellow.");'
+    testString: assert($('.yellow').css('background-color') == 'rgb(255, 255, 0)', 'The <code>div</code> element with class <code>yellow</code> should have a <code>background-color</code> of yellow.');
 
 ```
 

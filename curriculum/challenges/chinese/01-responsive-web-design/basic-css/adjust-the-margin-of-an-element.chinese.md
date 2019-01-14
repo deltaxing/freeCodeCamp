@@ -19,7 +19,7 @@ localeTitle: 调整元素的边距
 ```yml
 tests:
   - text: 你的<code>blue-box</code>类应该给出<code>20px</code>的<code>margin</code>元素。
-    testString: 'assert($(".blue-box").css("margin-top") === "20px", "Your <code>blue-box</code> class should give elements <code>20px</code> of <code>margin</code>.");'
+    testString: assert($(".blue-box").css("margin-top") === "20px", 'Your <code>blue-box</code> class should give elements <code>20px</code> of <code>margin</code>.');
 
 ```
 

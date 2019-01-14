@@ -18,9 +18,9 @@ localeTitle: 使用u标签为文本加下划线
 ```yml
 tests:
   - text: 您的代码应该在标记中添加<code>u</code>标记。
-    testString: 'assert($("u").length === 1, "Your code should add a <code>u</code> tag to the markup.");'
+    testString: assert($('u').length === 1, 'Your code should add a <code>u</code> tag to the markup.');
   - text: <code>u</code>标签应该包含文本“Ph.D. students”。
-    testString: 'assert($("u").text() === "Ph.D. students", "The <code>u</code> tag should wrap around the text "Ph.D. students".");'
+    testString: assert($('u').text() === 'Ph.D. students', 'The <code>u</code> tag should wrap around the text "Ph.D. students".');
 
 ```
 

@@ -18,7 +18,7 @@ localeTitle: 使用flex-wrap属性包装行或列
 ```yml
 tests:
   - text: '<code>#box-container</code>元素应该将<code>flex-wrap</code>属性设置为wrap值。'
-    testString: 'assert($("#box-container").css("flex-wrap") == "wrap", "The <code>#box-container</code> element should have the <code>flex-wrap</code> property set to a value of wrap.");'
+    testString: assert($('#box-container').css('flex-wrap') == 'wrap', 'The <code>#box-container</code> element should have the <code>flex-wrap</code> property set to a value of wrap.');
 
 ```
 

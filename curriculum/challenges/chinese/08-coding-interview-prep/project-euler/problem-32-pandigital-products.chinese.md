@@ -18,9 +18,9 @@ undefined
 ```yml
 tests:
   - text: ''
-    testString: 'assert(typeof pandigitalProducts === "function", "<code>pandigitalProducts()</code> is a function.");'
+    testString: assert(typeof pandigitalProducts === 'function', '<code>pandigitalProducts()</code> is a function.');
   - text: ''
-    testString: 'assert.strictEqual(pandigitalProducts(), 45228, "<code>pandigitalProducts()</code> should return 45228.");'
+    testString: assert.strictEqual(pandigitalProducts(), 45228, '<code>pandigitalProducts()</code> should return 45228.');
 
 ```
 

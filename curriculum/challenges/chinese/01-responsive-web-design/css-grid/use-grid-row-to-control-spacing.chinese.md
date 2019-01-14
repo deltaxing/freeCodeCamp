@@ -18,7 +18,7 @@ localeTitle: 使用网格行控制间距
 ```yml
 tests:
   - text: <code>item5</code>类应该有一个<code>grid-row</code>具有的值属性<code>2 / 4</code>
-    testString: 'assert(code.match(/.item5\s*?{[\s\S]*grid-row\s*?:\s*?2\s*?\/\s*?4\s*?;[\s\S]*}/gi), "<code>item5</code> class should have a <code>grid-row</code> property that has the value of <code>2 / 4</code>.");'
+    testString: assert(code.match(/.item5\s*?{[\s\S]*grid-row\s*?:\s*?2\s*?\/\s*?4\s*?;[\s\S]*}/gi), '<code>item5</code> class should have a <code>grid-row</code> property that has the value of <code>2 / 4</code>.');
 
 ```
 

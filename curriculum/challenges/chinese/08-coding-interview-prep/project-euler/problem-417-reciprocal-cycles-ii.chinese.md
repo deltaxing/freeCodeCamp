@@ -19,7 +19,7 @@ localeTitle: ''
 ```yml
 tests:
   - text: ''
-    testString: 'assert.strictEqual(euler417(), 446572970925740, "<code>euler417()</code> should return 446572970925740.");'
+    testString: assert.strictEqual(euler417(), 446572970925740, '<code>euler417()</code> should return 446572970925740.');
 
 ```
 

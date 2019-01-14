@@ -18,7 +18,7 @@ localeTitle: 创建文本字段
 ```yml
 tests:
   - text: 您的应用应具有<code>text</code>类型的<code>input</code>元素。
-    testString: 'assert($("input[type=text]").length > 0, "Your app should have an <code>input</code> element of type <code>text</code>.");'
+    testString: assert($("input[type=text]").length > 0, 'Your app should have an <code>input</code> element of type <code>text</code>.');
 
 ```
 

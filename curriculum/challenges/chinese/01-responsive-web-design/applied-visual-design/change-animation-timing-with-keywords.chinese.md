@@ -18,9 +18,9 @@ localeTitle: 使用关键字更改动画计时
 ```yml
 tests:
   - text: 具有id <code>ball1</code>的元素的<code>animation-timing-function</code>属性的值应该是线性的。
-    testString: 'assert($("#ball1").css("animation-timing-function") == "linear", "The value of the <code>animation-timing-function</code> property for the element with the id <code>ball1</code> should be linear.");'
+    testString: assert($('#ball1').css('animation-timing-function') == 'linear', 'The value of the <code>animation-timing-function</code> property for the element with the id <code>ball1</code> should be linear.');
   - text: 具有id <code>ball2</code>的元素的<code>animation-timing-function</code>属性的<code>ball2</code>应该是缓出的。
-    testString: 'assert($("#ball2").css("animation-timing-function") == "ease-out", "The value of the <code>animation-timing-function</code> property for the element with the id <code>ball2</code> should be ease-out.");'
+    testString: assert($('#ball2').css('animation-timing-function') == 'ease-out', 'The value of the <code>animation-timing-function</code> property for the element with the id <code>ball2</code> should be ease-out.');
 
 ```
 

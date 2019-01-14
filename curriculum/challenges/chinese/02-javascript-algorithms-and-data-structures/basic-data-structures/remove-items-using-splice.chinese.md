@@ -18,9 +18,9 @@ localeTitle: 使用splice（）删除项目
 ```yml
 tests:
   - text: <code>sumOfTen</code>应该返回10
-    testString: 'assert.strictEqual(sumOfTen([2, 5, 1, 5, 2, 1]), 10, "<code>sumOfTen</code> should return 10");'
+    testString: assert.strictEqual(sumOfTen([2, 5, 1, 5, 2, 1]), 10, '<code>sumOfTen</code> should return 10');
   - text: <code>sumOfTen</code>函数应该使用<code>splice()</code>方法
-    testString: 'assert.notStrictEqual(sumOfTen.toString().search(/\.splice\(/), -1, "The <code>sumOfTen</code> function should utilize the <code>splice()</code> method");'
+    testString: assert.notStrictEqual(sumOfTen.toString().search(/\.splice\(/), -1, 'The <code>sumOfTen</code> function should utilize the <code>splice()</code> method');
 
 ```
 
